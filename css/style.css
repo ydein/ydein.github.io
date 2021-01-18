@@ -104,9 +104,10 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 4vw;
+	min-height: 3.8vw;
 
 	padding: 0 1.7vw;
+	margin-bottom: 2vw;
 
 	background-color: #24292e;
 	font: 1.25em montserratregular, sans-serif;	
@@ -116,11 +117,11 @@ ul {
 	margin-bottom: 10px;
 }
 .list-header {
-	margin-top: 2vw;
-	margin-bottom: 1.5vw;
+	margin: 1.2vw auto;
 
 	text-align: center;
-	color: #313131;
+	color: #ffffff;
+	font-size: 1.1em;
 }
 .projects-list {
 	display: flex;
