@@ -1,0 +1,264 @@
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.eot');
+    src: local('open_sansregular'),
+    	 url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.eot');
+    src: local('montserratbold'),
+         url('fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-bold-webfont.woff') format('woff'),         
+         url('fonts/Montserrat-Bold.ttf') format('truetype'),
+         url('fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.eot');
+    src: local('montserratregular'),
+         url('fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff'),        
+         url('fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('opensans-bold-webfont.eot');
+    src: local('open_sansbold'),
+         url('fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/opensans-bold-webfont.woff') format('woff'),
+         url('fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('opensans-semibold-webfont.eot');
+    src: local('open_sanssemibold'),
+         url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	-webkit-clip-path: inset(100%);
+
+	        clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+body {
+	font: normal 100% open_sansregular, sans-serif;
+	color: #626262;
+	background-color: #ffffff;
+	margin: 0 auto;
+	line-height: 1.456em;
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 3.8vw;
+
+	padding: 0 1.7vw;
+	margin-bottom: 2vw;
+
+	background-color: #24292e;
+	font: 1.25em montserratregular, sans-serif;	
+	color: #fefefe;
+}
+.info__email {
+	margin-bottom: 10px;
+}
+.list-header {
+	margin: 1.2vw auto;
+
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.1em;
+}
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+
+	box-sizing: content-box;
+	margin: 0 3vw 2vw 3vw;
+}
+.projects-list__item {
+	box-sizing: content-box;
+	width: 280px;
+	margin-bottom: 2.5vw;
+	margin-left: 0.3vw;
+    margin-right: 0.3vw;
+
+	border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;	
+}
+.projects-list__img {
+	width: 280px;
+}
+.projects-list__description {
+	font-size: 0.875em;
+	margin: 0;
+	margin-bottom: 1vw;
+}
+
+
+.projects-list__img-link {
+	position: relative;
+	display: block;
+}
+.projects-list__item:hover .overlay {
+	position: absolute;
+	background-color: #2eb398;
+	opacity: 0.7;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+.projects-list__item:hover {
+	background-color: #ebebeb;
+}
+.projects-list__demo {
+	display: none;
+}
+.projects-list__item:hover .projects-list__demo {
+	position: absolute;
+	display: flex;
+	border: 4px solid #ffffff;
+	font: 1.5em montserratbold, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+.arrow {
+	border-right: 4px solid #ffffff;
+	margin: 0;
+	padding: 0.5em 0.7em 0.4em 0.7em;
+}
+.text {
+	margin: 0;
+	padding: 0.6em 0.7em 0.4em 0.7em;
+}
+.projects-list__item:nth-of-type(n) {
+	border-bottom: 5px solid #2eb398;
+}
+.projects-list__item:nth-of-type(2n) {
+	border-bottom: 5px solid #e76049;
+}
+.projects-list__item:nth-of-type(3n) {
+	border-bottom: 5px solid #5692b1;
+}
+.projects-list__item:nth-of-type(4n) {
+	border-bottom: 5px solid #90899c;
+}
+.projects-list__item:nth-of-type(5n) {
+	border-bottom: 5px solid #14b9d6;
+}
+.projects-list__item:nth-of-type(6n) {
+	border-bottom: 5px solid #2eb398;
+}
+.projects-list__item:nth-of-type(7n) {
+	border-bottom: 5px solid #e76049;
+}
+.projects-list__item:nth-of-type(8n) {
+	border-bottom: 5px solid #5692b1;
+}
+.projects-list__item:nth-of-type(9n) {
+	border-bottom: 5px solid #90899c;
+}
+.projects-list__item:nth-of-type(10n) {
+	border-bottom: 5px solid #14b9d6;
+}
+.projects-list__link {
+	display: block;
+    padding: 0 1.2vw;
+
+	text-decoration: none;
+	font-size: inherit;
+	color: inherit;
+}
+.projects-list__name {
+	margin-bottom: 0.4vw;
+	margin-top: 0.8vw;
+
+	color: #313131;
+	font-size: 1.2em;
+}
+.projects-list__name:hover {
+	text-decoration: underline;
+}
+.projects-list__item:hover .projects-list__name {
+	color: #626262;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.projects-list__item {
+		width: 324px;	
+	}
+	.projects-list__img {
+		width: 324px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {	
+	body {
+		width: 84%;
+	}
+	.projects-list__item {
+		width: 440px;	
+	}
+	.projects-list__img {
+		width: 440px;
+	}
